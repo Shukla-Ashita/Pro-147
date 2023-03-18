@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000000">
+
+        <!--Camera-->
+        <a-entity position="0 7 19">
+            <a-camera></a-camera>
+        </a-entity>
+       
+        <a-asset-item id="bean-bag" src="./bean-bag.jpg"></a-asset-item>
+
+        <a-plane 
+        id="wall-poster"
+        src="./poster-image-wall.jpg" 
+        position="0 4 3"
+        height="9" 
+        width="12"
+        ></a-plane>
+        
+        <a-plane 
+        id="floor"
+        src="./woodenpaper.webp"
+        position="0 3 10" 
+        rotation="-90 0 0"
+        width="8" 
+        height="3"></a-plane>
+
+        <a-entity>
+            <a-entity position="-2 3.9 10" scale="0.5 0.5 0.5" gltf-model="#bean-bag" >
+            </a-entity>
+        </a-entity>
+
+    </a-scene>
+</body>
+
+</html>
